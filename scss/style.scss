@@ -1,0 +1,98 @@
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+$green: #99CC00;
+$black: #333333;
+$white: #fff;
+
+$font: Open Sans, Arial;
+  
+* {
+  font-family: $font;
+}
+
+body {
+  background-color: $black;
+  overflow: hidden;
+}
+
+header {
+  display: block;
+  background-color: $black;
+  margin: 2% auto;
+  color: white;
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 5em;
+}
+
+#row1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color: $white;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 20px;
+  #length1, #length2 {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    div {
+      display: inline;
+    }
+    .time {
+      font-size: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .minus, .plus {
+      background-color: $black;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      font-size: 2em;
+      outline: none;
+    }
+  }
+}
+
+
+
+#circle {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 4em;
+  border: 2px solid $green;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+  color: white;
+  p {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+   #fill {
+    position: absolute;
+    background: $green;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+footer{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
